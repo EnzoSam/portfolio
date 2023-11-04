@@ -1,0 +1,87 @@
+#aside_w
+{
+  min-width: 35%;
+}
+
+.home-container
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+main
+{
+    display: flex;
+    flex-grow: 1;
+}
+
+#home_w
+{
+    display: flex;
+    flex-grow: 1;
+}
+
+.path-padding-top
+{
+    padding-top: 10px;
+}
+
+.path-padding-left
+{
+    padding-left: 10px;
+}
+
+.windows-cmd {
+    height: 100%;
+    border: 1px solid #3a3939;
+  }
+  
+  .window-cmd-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    cursor: move;
+  }
+  
+  .window-cmd-title {
+    margin: 0;
+  }
+  
+  .window-cmd-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .window-cmd-content {
+    padding: 10px;
+  }
+
+#career-dir-list
+{
+  visibility: hidden;
+}
+
+  .animated-text-writing {
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    }
+
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100% ;}
+    }
+    
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: white; }
+    }
+  
