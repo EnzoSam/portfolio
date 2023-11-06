@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event)
     load('./components/3dmodel/modelviewer.html','model3dviewer');    
     loadsJs('./js/aside.js');
     loadsJs('./js/parts-selector.js');
+    loadsJs('./js/modelviewer.js');
 });
 
 function load(url, elementId)

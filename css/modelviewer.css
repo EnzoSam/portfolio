@@ -19,3 +19,12 @@ model-viewer
     min-width: 80%;
     height: 100%;    
 }
+
+.loading-container
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    min-width: 200px;
+}
