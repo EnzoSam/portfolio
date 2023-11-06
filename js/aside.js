@@ -17,4 +17,3 @@ function animarParrafos(index) {
 
 }
 
-animarParrafos(0);

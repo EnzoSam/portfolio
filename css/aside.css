@@ -1,87 +1,99 @@
+.aside-container
+{
+  display: flex;
+  flex-direction: column;  
+  flex-grow: 1;
+  margin-top: 20px;  
+  background-color: #7C40FC;  
+}
+
+.parts-container{
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #310296;  
+}
+
+.part-description
+{
+  display: flex;
+  flex-grow: 1;  
+}
+
+.parts-group
+{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  height: 40px;
+  justify-content: center;  
+  align-items: center;
+}
+
+.parts-detail
+{
+  margin-left: 20px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.skill-group
+{
+  display: none;
+  margin-top: 30px;  
+  gap: 20px;
+}
+
 #aside_w
 {
   min-width: 35%;
+  display: flex;
+  flex-direction: column;
+
 }
 
-.home-container
+aside
 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    flex-grow: 1;
+  flex-direction: row;  
 }
 
-main
+.skill-icon
 {
-    display: flex;
-    flex-grow: 1;
+  font-size: 50px;
 }
 
-#home_w
+.part-icon
 {
-    display: flex;
-    flex-grow: 1;
+  font-size: 25px;
 }
 
-.path-padding-top
+
+.personal-data
 {
-    padding-top: 10px;
+  font-size: large;
 }
 
-.path-padding-left
+i{
+  cursor: pointer;
+}
+
+.image-profile
 {
-    padding-left: 10px;
+  max-width: 170px;
+  margin-top: 10px;
+  filter: grayscale(100%);
 }
 
-.windows-cmd {
-    height: 100%;
-    border: 1px solid #3a3939;
-  }
-  
-  .window-cmd-bar {
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    cursor: move;
-  }
-  
-  .window-cmd-title {
-    margin: 0;
-  }
-  
-  .window-cmd-close {
-    background: none;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    float: right;
-  }
-  
-  .window-cmd-content {
-    padding: 10px;
-  }
-
-#career-dir-list
+#language-group
 {
-  visibility: hidden;
+  display: none;
 }
 
-  .animated-text-writing {
-    overflow: hidden;
-    white-space: nowrap;
-    visibility: hidden;
-    }
-
-
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 100% ;}
-    }
-    
-    /* The typewriter cursor effect */
-    @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: white; }
-    }
-  
+#works-group
+{
+  display: none;
+}

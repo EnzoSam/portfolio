@@ -1,0 +1,21 @@
+.modelviewer-container{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: center;
+   flex-grow: 1;
+}
+
+#model3dviewer
+{
+    display: flex;
+    width: 100%;
+}
+
+model-viewer
+{
+    display: flex;
+    align-self: center;
+    min-width: 80%;
+    height: 100%;    
+}

@@ -1,0 +1,23 @@
+.footer-container{
+    display: flex;    
+    gap: 10px;
+    align-items: center;
+    margin-right: 10px;    
+}
+
+footer
+{
+    flex-direction: row;
+    justify-content: end;
+    background-color: #2B0282;
+    height: 35px;
+}
+
+.social-icon{
+
+    font-size: 25px;
+}
+
+a:visited {
+    color: inherit;
+  }
