@@ -1,12 +1,12 @@
-import { getPart } from "./main";
+import { getPart, load } from "./main";
 
 export function onPartTogglePart(element)
 {
     element.classList.toggle("active");
     let part = getPart(element.id);
-    console.log(element.id);
-    console.log(part);
-
+    load('components/parts/' + part.contentFile,'currentpart'); 
+    setPartTitle(part.title); 
+/*
     if(element.id === 'personal-data-i')
     {
         document.getElementById('personal-data-group').style.display = 'flex';
@@ -40,7 +40,7 @@ export function onPartTogglePart(element)
         document.getElementById('personal-data-group').style.display = 'none';        
         setPartTitle('Works');    
         load('components/parts/projects.html','currentpart');    
-    }        
+    }        */
 }
 
 function setPartTitle(title)

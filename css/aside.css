@@ -43,7 +43,6 @@
 
 .skill-group
 {
-  display: none;
   margin-top: 30px;  
   gap: 20px;
 }
@@ -53,7 +52,6 @@
   min-width: 35%;
   display: flex;
   flex-direction: column;
-
 }
 
 aside
@@ -97,14 +95,4 @@ i{
   max-width: 170px;
   margin-top: 10px;
   filter: grayscale(100%);
-}
-
-#language-group
-{
-  display: none;
-}
-
-#works-group
-{
-  display: none;
 }
