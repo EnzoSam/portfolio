@@ -69,6 +69,16 @@ aside
 .part-icon
 {
   font-size: 25px;
+  transition: box-shadow 0.3s;
+}
+
+.part-icon.active
+{
+  box-shadow: 0 0 30px #c4acf7; 
+}
+
+.part-icon:hover {
+  box-shadow: 0 0 30px #c4acf7; 
 }
 
 
@@ -79,6 +89,7 @@ aside
 
 i{
   cursor: pointer;
+  background-color: transparent;
 }
 
 .image-profile

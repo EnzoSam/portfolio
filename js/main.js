@@ -1,16 +1,39 @@
+import { Part } from "../models/part";
+import { onPartTogglePart } from "./parts-selector";
+
+export const parts = [];
+
+
+window.onPartTogglePart = onPartTogglePart;
+
 document.addEventListener("DOMContentLoaded", function(event) 
 {
     console.log('READY');
+    loadParts();
     load('./components/navbar_w.html','navbar_w');
     load('./components/footer_w.html','footer_w');
     load('./components/aside_w.html','aside_w');
     load('./components/3dmodel/modelviewer.html','model3dviewer');    
-    loadsJs('./js/aside.js');
-    loadsJs('./js/parts-selector.js');
-    loadsJs('./js/modelviewer.js');
+    //loadsJs('./js/aside.js');
+    //loadsJs('./js/parts-selector.js');
+    //loadsJs('./js/modelviewer.js');
 });
 
-function load(url, elementId)
+export function loadParts()
+{
+    let personalData = new Part("Personal Data", "personal-data.html", "personal-data-i");
+    parts.push(personalData);
+
+    let works = new Part("Projects", "projects.html", "works-i");
+    parts.push(personalData);
+}
+
+export function getPart(referenceId)
+{
+    return parts.find(p=>p.referenceId === referenceId);
+}
+
+export function load(url, elementId)
 {
     const element = document.getElementById(elementId);
     if(!element)

@@ -1,6 +1,12 @@
-function onPartToggle(element)
+import { getPart } from "./main";
+
+export function onPartTogglePart(element)
 {
+    element.classList.toggle("active");
+    let part = getPart(element.id);
     console.log(element.id);
+    console.log(part);
+
     if(element.id === 'personal-data-i')
     {
         document.getElementById('personal-data-group').style.display = 'flex';
@@ -32,8 +38,9 @@ function onPartToggle(element)
         document.getElementById('language-group').style.display = 'none';
         document.getElementById('skill-group').style.display = 'none';
         document.getElementById('personal-data-group').style.display = 'none';        
-        setPartTitle('Works');        
-    }    
+        setPartTitle('Works');    
+        load('components/parts/projects.html','currentpart');    
+    }        
 }
 
 function setPartTitle(title)

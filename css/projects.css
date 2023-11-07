@@ -1,0 +1,11 @@
+.projects-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.proyect-row
+{
+    display: flex;
+    flex-direction: row;
+}
