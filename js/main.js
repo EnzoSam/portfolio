@@ -5,6 +5,8 @@ export const parts = [];
 
 
 window.onPartTogglePart = onPartTogglePart;
+window.imgToogle = imgToogle;
+window.cerrarModal = cerrarModal;
 
 document.addEventListener("DOMContentLoaded", async function(event) 
 {
@@ -15,6 +17,11 @@ document.addEventListener("DOMContentLoaded", async function(event)
     await load('./components/3dmodel/modelviewer.html','model3dviewer');    
 
     onPartTogglePart(document.getElementById('personal-data-i'));
+
+    document.getElementById("modelviewer").addEventListener('model-visibility', (ev) => {
+
+        document.getElementById('loader-model').style.display = 'none';
+      });
 });
 
 export function loadParts()
@@ -71,13 +78,12 @@ function loadsJs(url, callback) {
   }
 
 
-export function imgToogle()
+function imgToogle(src)
 {
 
 console.log('************');
 document.getElementById('modal').style.display = 'block';
-document.getElementById('imagenEnModal').src = this.src; // Mostrar la imagen seleccionada en el modal
-document.getElementById('tituloModal').innerText = this.alt; // Mostrar el título de la imagen en el modal
+document.getElementById('imagenEnModal').src = src; // Mostrar la imagen seleccionada en el modal
         
 }
 

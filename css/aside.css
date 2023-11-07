@@ -5,6 +5,7 @@
   flex-grow: 1;
   margin-top: 20px;  
   background-color: #7C40FC;  
+  background-image: linear-gradient(to left, #310296 , #6b43c0);
 }
 
 .parts-container{
@@ -41,11 +42,6 @@
   flex-direction: column;
 }
 
-.skill-group
-{
-  margin-top: 30px;  
-  gap: 20px;
-}
 
 #aside_w
 {

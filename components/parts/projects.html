@@ -1,21 +1,30 @@
 <div class="projects-container">
     <div class="proyect-row">
         <div>
-            <img class="img-project" src="assets/img/metro.png" alt="">
+            <img  id="imagenModal" onclick="imgToogle('assets/img/metro.png')" class="img-project" src="assets/img/metro.png" alt="">
         </div>
         <div>
             <img class="img-project" src="assets/img/rescuers.jpg" alt="">
         </div>           
     </div>
 
-    <img onclick="imgToogle" src="assets/img/metro.png" alt="Imagen" id="imagenModal"> <!-- La imagen que al hacer clic abrirá el modal -->
+    <div class="proyect-row">
+        <div>
+            <img  onclick="imgToogle('assets/img/portfolio.jpg')" class="img-project" src="assets/img/portfolio.jpg" alt="">
+        </div>     
+        <div>
+            <img  onclick="imgToogle('assets/img/criptocheque.jpg')" class="img-project" src="assets/img/criptocheque.jpg" alt="">
+        </div>     
+        
+    </div>
 
     <!-- El modal -->
     <div id="modal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="cerrarModal()">&times;</span> <!-- Botón para cerrar el modal -->
-            <h2 id="tituloModal">Título de la Imagen</h2>
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2 id="tituloModal">Metro Gestion</h2>
             <img class="modal-img" id="imagenEnModal">
+            <p>Tesis carrera analista de sistemas. Sistema de gestion para un negocio de informatica.</p>
         </div>
     </div>
 

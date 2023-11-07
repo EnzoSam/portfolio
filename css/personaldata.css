@@ -1,0 +1,8 @@
+.same-logo{
+    width: 150px;
+    filter: brightness();
+    margin: 0;
+    margin-left: auto;
+    margin-top: -47px;
+    margin-right: 50px;
+}
