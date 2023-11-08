@@ -1,5 +1,5 @@
-import { Part } from "../models/part";
-import { onPartTogglePart } from "./parts-selector";
+import { Part } from "../models/part.js";
+import { onPartTogglePart } from "./partsselector.js";
 
 export const parts = [];
 

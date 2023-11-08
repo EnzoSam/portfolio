@@ -1,4 +1,4 @@
-import { getPart, load } from "./main";
+import { getPart, load } from "./main.js";
 
 export function onPartTogglePart(element)
 {
