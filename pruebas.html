@@ -1,0 +1,28 @@
+<style>
+    .container {
+    display: grid; /* activa el modo grid */
+    grid-template-columns: 1fr 1fr; /* crea dos columnas del mismo ancho */
+    gap: 20px; /* añade un espacio entre los elementos */
+    }
+    
+    .item {
+    height: 100px; /* alto fijo para los divs */
+    background-color: coral; /* color de fondo para los divs */
+    }
+    
+    .item:nth-child(2) {
+    height: 150px; /* cambia el alto del segundo div */
+    }
+    
+    .item:nth-child(4) {
+    height: 150px; /* cambia el alto del cuarto div */
+    }
+    </style>
+    
+    <div class="container">
+    <div class="item">Div 1</div>
+    <div class="item">Div 2</div>
+    <div class="item">Div 3</div>
+    <div class="item">Div 4</div>
+    </div>
+    

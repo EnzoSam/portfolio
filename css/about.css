@@ -1,0 +1,100 @@
+#about
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+#aboutitle
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about-item-container
+{
+    background-color: var(--s-silver);    
+    border: 1px solid transparent;
+    border-radius: 5%;
+    padding-left:40px;    
+    padding-right:40px; 
+    padding-top: 20px;   
+}
+
+#background
+{
+    height: 510px;
+    width: 65%;
+}
+
+#work
+{
+    height: 240px;
+}
+
+p
+{    
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+#education
+{
+    height: 250px;
+}
+
+#workeducation
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+#taquionicon
+{
+    width: 150px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.education-item
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.education-date
+{
+    color: var(--s-black);
+}
+
+.education-detail
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    #background {
+        width: 100%; 
+    }
+
+    #workeducation
+    {
+        width: 100%; 
+    }
+}

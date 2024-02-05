@@ -1,9 +1,22 @@
-@import url('aside.css');
-@import url('modelviewer.css');
 @import url('footer.css');
 @import url('projects.css');
-@import url('personaldata.css');
-@import url('skills.css');
+@import url('nav.css');
+@import url('presentation.css');
+@import url('projects.css');
+@import url('skillsanim.css');
+@import url('about.css');
+
+:root {
+    scroll-behavior: smooth;
+
+    --s-silver: #acacacff;
+    --s-electric-violet: #7c3ffeff;
+    --s-dark-green: #001a00ff;
+    --s-white: #e5e5e5ff;
+    --s-black: #000000ff;
+
+    --s-nav-height:100px;    
+  }
 
 
 body,html {
@@ -11,38 +24,18 @@ body,html {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: #A57CFC;
-    background-image: linear-gradient(to left, #310296 , #A57CFC);
-    color:azure
+    background-color: var(--s-white);
+    /*background-image: linear-gradient(to left, var(--smoky-black) ,var(--black));*/
+    color:var(--s-black)
 }
+
+
 
 body
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
     font-family:  'VT323', monospace;
 }
 
 * {
     box-sizing: border-box;
 }
-
-main
-{
-    display: flex;
-    flex-direction: row;    
-    flex-grow: 1;
-}
-
-header,main,aside,footer{
-    display: flex;
-}
-
-#content
-{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-}
-

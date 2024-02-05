@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    max-height: var(--s-nav-height);
+}
+
+#menu
+{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: end;
+    gap: 20px;
+    list-style: none;
+}
+
+#logo
+{
+    width: 150px;
+}

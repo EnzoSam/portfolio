@@ -1,37 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Enzo Samudio</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Enzo Samudio</title>
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
-</head>
-
-<body>
-  <header>
-    <nav id="navbar_w"></nav>
-  </header>
-
-  <div id="content">
-    <aside id="aside_w">
-    </aside>
-
-    <main>
-      <section id="model3dviewer">
-      </section>
-    </main>
+  <body>
+    <section>
+      <header>
+        <nav>
+          <img id="logo" src="assets/img/logo.png" alt="Logo" />
+          <ul id="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
   
-  </div>
+      <section id="presentation">
+        <div id="name-container">
+          <div id="hello">Hi!</div>
+          <div id="name">I'm Enzo Samudio</div>
+          <div id="ocupation">I'm Software developer</div>
+        </div>
 
-  <footer id="footer_w"></footer>
+        <div id="image-presentation-container">
+          <img id="photo" src="assets/img/pfi.png" alt="Photo" />
 
-  <script type="module" src="./js/main.js"></script>
-  <script src="https://kit.fontawesome.com/b7c0074117.js" crossorigin="anonymous"></script>
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
-</body>
+          <div class="ring">
+            <div class="dot dot--1">
+              <img src="assets/img/cs.png" alt="" />
+            </div>
+            <div class="dot dot--2">
+              <img src="assets/img/angular.png" alt="" />
+            </div>
+            <div class="dot dot--3">
+              <img src="assets/img/nodejs.png" alt="" />
+            </div>
+            <div class="dot dot--4">
+              <img src="assets/img/sql.png" alt="" />
+            </div>
+            <div class="dot dot--5">
+              <img src="assets/img/java.png" alt="" />
+            </div>
+            <div class="dot dot--6">
+              <img src="assets/img/android.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="projects">
+        <header>
+          <h1>Proyectos</h1>
+        </header>
+
+        <article class="project" id="metro">
+          <img src="assets/img/metro.png" alt="Metro Gestion" />
+
+          <div class="project-detail detail-right">
+            <h1>Metro Gestión</h1>
+            <p>
+              Metro Gestion es un sistema de gestion comercial que tambien
+              cuenta con un modulo para el registro de reparaciones.
+            </p>
+            <div class="technologies">
+              <img src="assets/img/cs.png" alt="" style="padding: 5px;"/>
+              <img src="assets/img/sql.png" alt="" />
+            </div>
+          </div>
+        </article>
+
+        <article class="project" id="rescuers">
+          <div class="project-detail detail-left">
+            <h1>Rescatistas</h1>
+            <p>
+              Sitio web para adopción y búsqueda de mascotas. (En desarrollo)
+            </p>
+            <div class="technologies">
+              <img src="assets/img/angular.png" alt="" />
+              <img src="assets/img/nodejs.png" alt="" />
+            </div>
+          </div>
+          <img src="assets/img/rescuers.jpg" alt="Rescuers APP" />
+        </article>
+
+        <article class="project" id="criptocheck">
+          <img src="assets/img/criptocheque.jpg" alt="Criptocheck APP" />
+          <div class="project-detail detail-right">
+            <h1>Cripto cheque</h1>
+            <p>
+              Web app que permite emitir y cobrar cheques en la red Ethereum.
+            </p>
+            <div class="technologies">
+              <img src="assets/img/angular.png" alt="" />
+              <img src="assets/img/nodejs.png" alt="" />
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <h1 id="aboutitle">More about me</h1>
+      <section id="about">
+        <article class="about-item-container" id="background">
+          <h3>Background</h3>
+          <p id="aboutmetext">
+            I started my secondary studies at a school whose focus on computer
+            science paved the way for me to enter the field of computing,
+            specifically software development.
+          </p>
+          <p>
+            During that period, I began by dedicating myself to computer repair,
+            assembly, and network installation.
+          </p>
+          <p>
+            In 2009, I started my career as a Systems Analyst, where I
+            strengthened my knowledge in hardware and delved into software
+            development, a field in which I currently work.
+          </p>
+          <p>
+            Today, I have over 10 years of experience in developing applications
+            for Windows and have been exploring web development technologies for
+            just over a year.
+          </p>
+        </article>
+
+        <div id="workeducation">
+          <article class="about-item-container" id="work">
+            <h3>Current work</h3>
+            <div id="taquiondetail">
+              <a href="https://taquionit.com" target="_blank">
+                <img
+                  id="taquionicon"
+                  src="assets/img/taquionit.png"
+                  alt="Taquion IT"
+                />
+              </a>
+              <div>
+                Taquion IT since 2009
+                <p>Technology company, developers of Prana ERP</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="about-item-container" id="education">
+            <h3>Education</h3>
+            <div class="education-item">
+              <div class="education-date">
+                <small>2009 -</small>
+              </div>
+              <div class="education-detail">
+                <strong>Analista de sistemas</strong>
+                <small>CESMI</small>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-date">
+                <small>2022 -</small>
+              </div>
+              <div class="education-detail">
+                <strong>Full Stack JR</strong>
+                <small>Argentina Programa</small>
+              </div>
+            </div>
+
+            <div class="education-item">
+              <div class="education-date">
+                <small>2022 -</small>
+              </div>
+              <div class="education-detail">
+                <strong>HTML Y CSS3 Desde Cero</strong>
+                <small>Udemi</small>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    
+    <footer id="footer_w"></footer>
+
+    <script type="module" src="./js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b7c0074117.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
+    ></script>
+  </body>
 </html>
