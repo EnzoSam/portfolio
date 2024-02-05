@@ -64,7 +64,14 @@
     border-right: 1px solid var(--s-electric-violet);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 736px) {
+    
+    #projects
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }    
+    
     .project img
     {
         width: 100%;

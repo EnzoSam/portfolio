@@ -63,7 +63,7 @@
     animation: rotateCounterClockwise 3s linear infinite;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 736px) {
     .ring {
         top: 5px;
         right: 190px;
