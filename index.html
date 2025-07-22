@@ -1,204 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Enzo Samudio (en construcción)</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    />
-  </head>
 
-  <body>
-    <section>
-      <header>
-        <nav>
-          <img id="logo" src="assets/img/logo.png" alt="Logo" />
-          <ul id="menu">
-            <li><a href="#">Start</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Enzo Samudio (Under Construction)</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header class="header-bg-custom shadow-md fixed w-full z-10">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div>
+        <a class="text-2xl font-bold flex items-center" href="#">
+          <img alt="SME Devs Logo" class="h-8 w-auto mr-2" src="assets/img/logo.png" />
+          <span class="text-purple">SAME</span><span class="text-muted-custom">Devs</span>
+        </a>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a class="text-custom hover:text-purple transition duration-300" href="#about">About Me</a>
+        <a class="text-custom hover:text-purple transition duration-300" href="#projects">Projects</a>
+        <a class="text-custom hover:text-purple transition duration-300" href="#experience">Experience</a>
+        <a class="text-custom hover:text-purple transition duration-300" href="#studies">Studies</a>
+        <button class="focus:outline-none" id="theme-toggle">
+          <i class="material-icons text-custom">brightness_6</i>
+        </button>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button class="focus:outline-none mr-4" id="theme-toggle-mobile">
+          <i class="material-icons text-custom">brightness_6</i>
+        </button>
+        <button class="text-custom focus:outline-none" id="menu-btn">
+          <i class="material-icons">menu</i>
+        </button>
+      </div>
+    </nav>
+    <div class="hidden md:hidden" id="mobile-menu">
+      <a class="block py-2 px-4 text-sm text-custom hover:bg-gray-800 dark:hover:bg-gray-700 light:hover:bg-gray-200"
+        href="#about">About Me</a>
+      <a class="block py-2 px-4 text-sm text-custom hover:bg-gray-800 dark:hover:bg-gray-700 light:hover:bg-gray-200"
+        href="#projects">Projects</a>
+      <a class="block py-2 px-4 text-sm text-custom hover:bg-gray-800 dark:hover:bg-gray-700 light:hover:bg-gray-200"
+        href="#experience">Experience</a>
+      <a class="block py-2 px-4 text-sm text-custom hover:bg-gray-800 dark:hover:bg-gray-700 light:hover:bg-gray-200"
+        href="#studies">Studies</a>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="min-h-screen flex items-center header-bg-custom" id="hero">
+      <div class="container mx-auto px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Hello, I'm <span class="text-purple">a Software
+              Developer</span></h1>
+        <p class="text-lg md:text-xl text-muted-custom max-w-3xl mx-auto mb-8">Passionate about creating innovative
+          and efficient solutions that drive growth and enhance user experience.</p>
+        <a class="bg-purple text-white font-bold py-3 px-8 rounded-full hover-bg-purple transition duration-300 inline-flex items-center"
+          href="#projects">
+          View My Projects
+          <i class="material-icons ml-2">arrow_forward</i>
+        </a>
+      </div>
     </section>
-  
-      <section id="presentation">
-        <div id="name-container">
-          <div id="hello">Hi!</div>
-          <div id="name">I'm Enzo Samudio</div>
-          <div id="ocupation">I'm Software developer</div>
-        </div>
+    <section class="section bg-section-custom" id="about">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About Me</h2>
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="md:w-2/3">
 
-        <div id="image-presentation-container">
-          <img id="photo" src="assets/img/pfi.png" alt="Photo" />
-
-          <div class="ring">
-            <div class="dot dot--1">
-              <img src="assets/img/cs.png" alt="" />
-            </div>
-            <div class="dot dot--2">
-              <img src="assets/img/angular.png" alt="" />
-            </div>
-            <div class="dot dot--3">
-              <img src="assets/img/nodejs.png" alt="" />
-            </div>
-            <div class="dot dot--4">
-              <img src="assets/img/sql.png" alt="" />
-            </div>
-            <div class="dot dot--5">
-              <img src="assets/img/java.png" alt="" />
-            </div>
-            <div class="dot dot--6">
-              <img src="assets/img/android.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <header>
-          <h1>Proyects</h1>
-        </header>
-
-        <article class="project" id="metro">
-          <img src="assets/img/metro.png" alt="Metro Gestion" />
-
-          <div class="project-detail detail-right">
-            <h1>Metro Gestión</h1>
-            <p>
-              Metro Gestion is a commercial management system that also
-              It has a module for recording computer repairs.
+            <p class="text-muted-custom leading-relaxed mb-4">
+              I started my secondary studies at a school whose focus on computer
+              science paved the way for me to enter the field of computing,
+              specifically software development.
             </p>
-            <div class="technologies">
-              <img src="assets/img/cs.png" alt="" style="padding: 5px;"/>
-              <img src="assets/img/sql.png" alt="" />
-            </div>
-          </div>
-        </article>
-
-        <article class="project" id="rescuers">
-          <div class="project-detail detail-left">
-            <h1>Rescuers</h1>
-            <p>
-              Pet search and adoption website. (Developing)
+            <p class="text-muted-custom leading-relaxed mb-4">
+              During that period, I began by dedicating myself to computer repair,
+              assembly, and network installation.
             </p>
-            <div class="technologies">
-              <img src="assets/img/angular.png" alt="" />
-              <img src="assets/img/nodejs.png" alt="" />
+            <p class="text-muted-custom leading-relaxed mb-4">
+              In 2009, I started my career as a Systems Analyst, where I
+              strengthened my knowledge in hardware and delved into software
+              development, a field in which I currently work.
+            </p>
+            <p class="text-muted-custom leading-relaxed">
+              Today, I have over 10 years of experience in developing applications
+              for Windows and have been exploring web development technologies for
+              just over a year.
+            </p>
+
+
+          </div>
+          <div class="md:w-1/3 flex justify-center">
+            <div class="w-48 h-48 card-bg-custom rounded-full flex items-center justify-center light:bg-gray-200">
+              <img src="assets/img/photo.webp" alt="Enzo Samudio" class="w-48 h-48 rounded-full object-cover shadow-lg">
             </div>
           </div>
-          <a href="https://rescuers-e684f.web.app" target="_blank" style="display: contents;">
-            <img src="assets/img/rescuers.jpg" alt="Rescuers APP" />
+        </div>
+      </div>
+    </section>
+    <section class="section bg-custom" id="projects">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <a href="https://mascovita.com" target="_blank" rel="noopener noreferrer">
+            <div
+              class="card-bg-custom rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+              <img alt="Project Image" class="w-full h-56 object-cover" src="assets/img/mascovita.webp" />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-purple">E-commerce</h3>
+                <p class="text-muted-custom mb-4">Complete development of an online catalog for a pet food store.
+                </p>
+                <span class="text-sm font-semibold bg-purple/20 text-purple py-1 px-3 rounded-full">Angular</span>
+                <span class="text-sm font-semibold bg-purple/20 text-purple py-1 px-3 rounded-full">Bootstrap</span>
+                <span class="text-sm font-semibold bg-purple/20 text-purple py-1 px-3 rounded-full ml-2">Firebase
+                  Database</span>
+              </div>
+            </div>
           </a>
-        </article>
 
-        <article class="project" id="criptocheck">
-          <img src="assets/img/criptocheque.jpg" alt="Criptocheck APP" />
-          <div class="project-detail detail-right">
-            <h1>Crypto check</h1>
-            <p>              
-              Web app that allows you to issue and claim checks on the Ethereum network
-            </p>
-            <div class="technologies">
-              <img src="assets/img/angular.png" alt="" />
-              <img src="assets/img/nodejs.png" alt="" />
+          <div
+            class="card-bg-custom rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+            <img alt="Project Image" class="w-full h-56 object-cover" src="assets/img/metro.webp" />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2 text-purple">Metro Gestión</h3>
+              <p class="text-muted-custom mb-4">Metro Gestion is a commercial management system that also
+                It has a module for recording computer repairs.</p>
+              <span class="text-sm font-semibold bg-purple/20 text-purple py-1 px-3 rounded-full">.C#</span>
+              <span class="text-sm font-semibold bg-purple/20 text-purple py-1 px-3 rounded-full ml-2">SQL Server</span>
+              <span class="text-sm font-semibold bg-purple/20 text-purple py-1 px-3 rounded-full ml-2">Dev
+                Express</span>
             </div>
           </div>
-        </article>
-      </section>
 
-      <h1 id="aboutitle">More about me</h1>
-      <section id="about">
-        <article class="about-item-container" id="background">
-          <h3>Background</h3>
-          <p id="aboutmetext">
-            I started my secondary studies at a school whose focus on computer
-            science paved the way for me to enter the field of computing,
-            specifically software development.
-          </p>
-          <p>
-            During that period, I began by dedicating myself to computer repair,
-            assembly, and network installation.
-          </p>
-          <p>
-            In 2009, I started my career as a Systems Analyst, where I
-            strengthened my knowledge in hardware and delved into software
-            development, a field in which I currently work.
-          </p>
-          <p>
-            Today, I have over 10 years of experience in developing applications
-            for Windows and have been exploring web development technologies for
-            just over a year.
-          </p>
-        </article>
-
-        <div id="workeducation">
-          <article class="about-item-container" id="work">
-            <h3>Current work</h3>
-            <div id="taquiondetail">
-              <a href="https://taquionit.com" target="_blank">
-                <img
-                  id="taquionicon"
-                  src="assets/img/taquionit.png"
-                  alt="Taquion IT"
-                />
-              </a>
-              <div>
-                Taquion IT since 2009
-                <p>Technology company, developers of Prana ERP</p>
+          <a href="https://rescuers-e684f.web.app/" target="_blank">
+            <div
+              class="card-bg-custom rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+              <img alt="Project Image" class="w-full h-56 object-cover" src="assets/img/rescuers.webp" />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-purple">Rescuers</h3>
+                <p class="text-muted-custom mb-4"> Pet search and adoption website. (Developing).</p>
+                <span class="text-sm font-semibold bg-purple/20 text-purple py-1 px-3 rounded-full">Angular</span>
+                <span class="text-sm font-semibold bg-purple/20 text-purple py-1 px-3 rounded-full">Node Js</span>
+                <span class="text-sm font-semibold bg-purple/20 text-purple py-1 px-3 rounded-full ml-2">Mongodb</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="about-item-container" id="education">
-            <h3>Education</h3>
-            <div class="education-item">
-              <div class="education-date">
-                <small>2009 -</small>
+            <div
+              class="card-bg-custom rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+              <img alt="Project Image" class="w-full h-56 object-cover" src="assets/img/criptocheque.webp" />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2 text-purple">Crypto Check</h3>
+                <p class="text-muted-custom mb-4">Web app that allows you to issue and claim checks on the Ethereum network.</p>
+                <span class="text-sm font-semibold bg-purple/20 text-purple py-1 px-3 rounded-full">Angular</span>
+                <span class="text-sm font-semibold bg-purple/20 text-purple py-1 px-3 rounded-full">Node Js</span>
               </div>
-              <div class="education-detail">
-                <strong>Technical programmer</strong>
-                <small>CESMI</small>
-              </div>
-            </div>
+            </div>          
 
-            <div class="education-item">
-              <div class="education-date">
-                <small>2022 -</small>
-              </div>
-              <div class="education-detail">
-                <strong>Full Stack JR</strong>
-                <small>Argentina Program</small>
-              </div>
-            </div>
-
-            <div class="education-item">
-              <div class="education-date">
-                <small>2022 -</small>
-              </div>
-              <div class="education-detail">
-                <strong>HTML Y CSS3 from scratch</strong>
-                <small>Udemi</small>
-              </div>
-            </div>
-          </article>
         </div>
-      </section>
-    
-    <footer id="footer_w"></footer>
+      </div>
+    </section>
+    <section class="section bg-section-custom" id="experience">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Professional Experience</h2>
+        <div class="max-w-3xl mx-auto">
+          <div class="relative border-l-2 border-purple">
+            <div class="mb-8 ml-8">
+              <div class="absolute w-4 h-4 bg-purple rounded-full -left-2 border-2 border-gray-900"></div>
+              <p class="text-sm text-muted-custom">March 2012 - Present</p>
+              <h3 class="text-xl font-bold text-purple">Software Developer</h3>
+              <p class="text-custom font-medium">Taquión IT.</p>
+              <p class="mt-2 text-muted-custom">I am part of the ERP development team.</p>
+            </div>
+            <div class="mb-8 ml-8">
+              <div class="absolute w-4 h-4 bg-purple rounded-full -left-2 border-2 border-gray-900"></div>
+              <p class="text-sm text-muted-custom">March 2012 - July 2024</p>
+              <h3 class="text-xl font-bold text-purple">Full-Stack Developer</h3>
+              <p class="text-custom font-medium">IDM Sistemas</p>
+              <p class="mt-2 text-muted-custom">I was part of the ERP development team.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-custom" id="studies">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Studies</h2>
+        <div class="max-w-3xl mx-auto card-bg-custom rounded-lg shadow-lg p-8 mb-2">
+          <div class="flex items-center mb-4">
+            <div class="bg-purple/20 p-3 rounded-full mr-4">
+              <i class="material-icons text-purple text-3xl">school</i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-purple">HTML & CSS3 from scratch</h3>
+              <p class="text-custom font-medium">UDEMY</p>
+              <p class="text-sm text-muted-custom">2022</p>
+            </div>
+          </div>
+          <p class="text-muted-custom">
+            Initialization in frontend web development with HTML and CSS.
+          </p>
+        </div>
 
-    <script type="module" src="./js/main.js"></script>
-    <script
-      src="https://kit.fontawesome.com/b7c0074117.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="module"
-      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
-    ></script>
-  </body>
+        <div class="max-w-3xl mx-auto card-bg-custom rounded-lg shadow-lg p-8 mb-2">
+          <div class="flex items-center mb-4">
+            <div class="bg-purple/20 p-3 rounded-full mr-4">
+              <i class="material-icons text-purple text-3xl">school</i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-purple">Full Stack JR</h3>
+              <p class="text-custom font-medium">Argentina Programa</p>
+              <p class="text-sm text-muted-custom">2022</p>
+            </div>
+          </div>
+          <p class="text-muted-custom">
+            The final project consisted of developing a web portfolio with Angular, Java with Spring Boot, and MySQL.
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto card-bg-custom rounded-lg shadow-lg p-8">
+          <div class="flex items-center mb-4">
+            <div class="bg-purple/20 p-3 rounded-full mr-4">
+              <i class="material-icons text-purple text-3xl">school</i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-purple">Systems Analyst</h3>
+              <p class="text-custom font-medium">CESMI</p>
+              <p class="text-sm text-muted-custom">2018</p>
+            </div>
+          </div>
+          <p class="text-muted-custom">
+            For the final project, I presented software for a store selling computer supplies and PC repair services.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="header-bg-custom">
+    <div class="container mx-auto px-6 py-8 text-center text-muted-custom">
+      <p>© 2025 SAME Devs.</p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a class="hover:text-purple transition duration-300" href="https://github.com/EnzoSam">GitHub</a>
+        <a class="hover:text-purple transition duration-300"
+          href="https://www.linkedin.com/in/enzo-samudio-583910145/">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./js/main.js"></script>
+  <script src="https://kit.fontawesome.com/b7c0074117.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</body>
+
 </html>

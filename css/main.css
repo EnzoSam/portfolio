@@ -1,41 +1,97 @@
-@import url('footer.css');
-@import url('projects.css');
-@import url('nav.css');
-@import url('presentation.css');
-@import url('projects.css');
-@import url('skillsanim.css');
-@import url('about.css');
-
 :root {
-    scroll-behavior: smooth;
-
-    --s-silver: #acacacff;
-    --s-electric-violet: #7c3ffeff;
-    --s-dark-green: #001a00ff;
-    --s-white: #e5e5e5ff;
-    --s-black: #000000ff;
-
-    --s-nav-height:100px;    
-  }
-
-
-body,html {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: var(--s-white);
-    /*background-image: linear-gradient(to left, var(--smoky-black) ,var(--black));*/
-    color:var(--s-black)
+    --bg-light: #F9FAFB;
+    --text-light: #1F2937;
+    --header-bg-light: #FFFFFF;
+    --card-bg-light: #FFFFFF;
+    --text-muted-light: #6B7280;
+    --bg-section-light: #F3F4F6;
+    --bg-dark: #111827;
+    --text-dark: #E5E7EB;
+    --header-bg-dark: #1F2937;
+    --card-bg-dark: #1F2937;
+    --text-muted-dark: #9CA3AF;
+    --bg-section-dark: #111827;
 }
 
-
-
-body
-{
-    font-family:  'VT323', monospace;
+.light {
+    --bg-color: var(--bg-light);
+    --text-color: var(--text-light);
+    --header-bg-color: var(--header-bg-light);
+    --card-bg-color: var(--card-bg-light);
+    --text-muted-color: var(--text-muted-light);
+    --bg-section-color: var(--bg-section-light);
 }
 
-* {
-    box-sizing: border-box;
+.dark {
+    --bg-color: var(--bg-dark);
+    --text-color: var(--text-dark);
+    --header-bg-color: var(--header-bg-dark);
+    --card-bg-color: var(--card-bg-dark);
+    --text-muted-color: var(--text-muted-dark);
+    --bg-section-color: var(--bg-section-dark);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.text-purple {
+    color: #8B5CF6;
+}
+
+.bg-purple {
+    background-color: #8B5CF6;
+}
+
+.border-purple {
+    border-color: #8B5CF6;
+}
+
+.hover-bg-purple:hover {
+    background-color: #7C3AED;
+}
+
+.section {
+    padding: 6rem 1rem;
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding: 8rem 2rem;
+    }
+}
+
+.bg-custom {
+    background-color: var(--bg-color);
+}
+
+.text-custom {
+    color: var(--text-color);
+}
+
+.header-bg-custom {
+    background-color: var(--header-bg-color);
+}
+
+.card-bg-custom {
+    background-color: var(--card-bg-color);
+}
+
+.text-muted-custom {
+    color: var(--text-muted-color);
+}
+
+.bg-section-custom {
+    background-color: var(--bg-section-color);
+}
+
+.dark .border-gray-900 {
+    border-color: #1F2937;
+}
+
+.light .border-gray-900 {
+    border-color: #F9FAFB;
 }
