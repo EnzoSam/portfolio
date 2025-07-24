@@ -1,7 +1,6 @@
 # robots.txt para Enzo Samudio - Programador
 # Fecha de creación/actualización: 2025-07-24
 
-# Permite a todos los rastreadores (User-agent: *) acceder a todo el sitio.
 User-agent: *
 Allow: /
 
