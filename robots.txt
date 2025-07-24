@@ -4,6 +4,4 @@
 User-agent: *
 Allow: /
 
-# Indica la ubicación de tu sitemap.xml.
-# ¡Asegúrate de reemplazar con la URL correcta de tu sitemap!
 Sitemap: https://enzosam.github.io/portfolio/sitemap.xml
